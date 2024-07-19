@@ -5,7 +5,7 @@
 
 void merge(int arr[], int lb, int mid, int ub) {
     int i = lb, j = mid + 1, k = lb;
-    int *b = (int*)malloc((ub - lb + 1) * sizeof(int)); // Changed size of b to accommodate all elements
+    int *b = (int*)malloc((ub - lb + 1) * sizeof(int)); 
 
     while (i <= mid && j <= ub) {
         if (arr[i] <= arr[j]) {
